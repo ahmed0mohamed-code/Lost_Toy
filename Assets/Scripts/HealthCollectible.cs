@@ -10,11 +10,15 @@ public class HealthCollectible : MonoBehaviour
     {
         PlayerController controller = other.GetComponent<PlayerController>();
         
-        if (controller != null && controller.health < controller.maxhealth)
+        
+        if ( controller != null)
         {
-            controller.changehealth(1);
             Destroy(gameObject);
             controller.PlaySound(collectedClip);
+            if ( controller.health < controller.maxhealth)
+            {
+                controller.changehealth(1);
+            }
         }
     }
 }
