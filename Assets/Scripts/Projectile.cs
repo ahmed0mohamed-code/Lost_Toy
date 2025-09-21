@@ -8,6 +8,7 @@ public class Projectile : MonoBehaviour
 {
     Rigidbody2D projectile;
 
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
@@ -30,6 +31,11 @@ public class Projectile : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        Enemy2 enemy2 = other.GetComponent<Enemy2>();
+        if(enemy2 != null)
+        {
+            enemy2.Fixed();
+        }
 
         EnemyController enemy = other.GetComponent<EnemyController>();
         if (enemy != null)

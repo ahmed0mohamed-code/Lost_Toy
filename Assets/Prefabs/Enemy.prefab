@@ -206,7 +206,7 @@ MonoBehaviour:
   EnemySpeed: 1
   Enemy: {fileID: 0}
   Vertical: 0
-  changetime: 8
+  changetime: 35
   smokeEffect: {fileID: 7264130846309711248}
 --- !u!82 &8347756432296509568
 AudioSource:
@@ -221,7 +221,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 9645ade057726c6428a54cc571053c6d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 1
   Mute: 0

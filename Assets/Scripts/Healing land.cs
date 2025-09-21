@@ -7,7 +7,7 @@ public class Healingland : MonoBehaviour
     private void OnTriggerStay2D(Collider2D other)
     {
         PlayerController controller = other.GetComponent<PlayerController>();
-        if (other != null && controller.health < controller.maxhealth )
+        if (controller != null && controller.health < controller.maxhealth )
         {
             controller.changehealth((float)0.5);
         }
